@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+.body {
+  background-color: whitesmoke;
+  color: #373F47;
+  width: 100%;
+  min-width: 736px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Open Sans", sans-serif; }
+
+.list {
+  padding: 4px;
+  border: #373F47 1px solid;
+  border-radius: 20px; }
+  .list__details {
+    margin: 3px;
+    padding: 16px;
+    text-align: left;
+    list-style: none; }
+
+li::before {
+  content: '🗂'; }
