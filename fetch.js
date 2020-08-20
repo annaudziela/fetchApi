@@ -15,3 +15,22 @@ fetch('https://api.github.com/users/annaudziela/repos?sort=created&direction=asc
 .catch(error => {
     console.log('Error: unable to download repos');
 })
+
+let isDark = false; 
+const switchModes = document.querySelector('.button--js');
+switchModes.addEventListener('click' , () => {
+if (isDark) {
+    document.documentElement.style.setProperty('--background-color', 'whitesmoke');
+    document.documentElement.style.setProperty('--text-color', '#373F47');
+    document.documentElement.style.setProperty('--border-style', '#373F47 1px solid');
+    isDark = false; 
+} else {
+document.documentElement.style.setProperty('--background-color', 'rgba(140, 144, 144, 0.800)');
+    document.documentElement.style.setProperty('--text-color', 'whitesmoke');
+    document.documentElement.style.setProperty('--border-style', 'whitesmoke 1px solid');
+    isDark = true; 
+}
+});
+
+// --background-color: whitesmoke; 
+// --text-color: #373F47;

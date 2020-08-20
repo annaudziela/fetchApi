@@ -8,9 +8,14 @@ html {
 *::after {
   box-sizing: inherit; }
 
+:root {
+  --background-color: whitesmoke;
+  --text-color: #373F47;
+  --border-style: #373F47 1px solid; }
+
 .body {
-  background-color: whitesmoke;
-  color: #373F47;
+  background-color: var(--background-color);
+  color: var(--text-color);
   width: 100%;
   min-width: 736px;
   display: flex;
@@ -21,9 +26,18 @@ html {
   text-align: center;
   font-family: "Open Sans", sans-serif; }
 
+.button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  background: rgba(184, 184, 184, 0.664);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px; }
+
 .list {
   padding: 4px;
-  border: #373F47 1px solid;
+  border: var(--border-style);
   border-radius: 20px; }
   .list__details {
     margin: 3px;
