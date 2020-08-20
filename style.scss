@@ -17,6 +17,16 @@ html {
     --background-color: whitesmoke; 
     --text-color: #373F47;
     --border-style: #373F47 1px solid;
+    --link-color: rgba(0, 0, 0, 0.781);
+}
+
+a {
+color: var(--link-color);
+
+&:hover {
+    color: rgba(66, 66, 66, 0.575);
+    text-decoration: underline;
+}
 }
 
 .body {
@@ -49,8 +59,8 @@ html {
     border: var(--border-style);
     border-radius: 20px;
     &__details {
-        margin: 3px;
-        padding: 16px;
+        margin: 2px;
+        padding: 12px;
         text-align: left;
         list-style: none;
         
